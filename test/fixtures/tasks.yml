@@ -2,14 +2,14 @@
 
 one:
   name: MyString
-  init: 2018-06-24
-  end: 2018-06-24
+  init: 2018-06-24 10:57:42
+  end: 2018-06-24 10:57:42
   user: one
   project: one
 
 two:
   name: MyString
-  init: 2018-06-24
-  end: 2018-06-24
+  init: 2018-06-24 10:57:42
+  end: 2018-06-24 10:57:42
   user: two
   project: two
