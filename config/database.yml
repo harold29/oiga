@@ -5,6 +5,7 @@ default: &default
   # Added unique username and password to make installation processes easier
   username: <%= ENV['DATABASE_USERNAME'] %>
   password: <%= ENV['DATABASE_PASSWORD'] %>
+  host: ''
 
 development:
   <<: *default
