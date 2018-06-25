@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<%= render '' %>
+<%= render 'embedded_form', task: @task %>
 
 <h1>Tasks</h1>
 
@@ -34,5 +34,4 @@
 
 <br>
 
-<%= render 'form', task: @task %>
 <%= link_to 'New Task', new_task_path %>

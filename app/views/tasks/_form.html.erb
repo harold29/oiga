@@ -1,5 +1,5 @@
 <%= form_with(model: task, local: true) do |form| %>
-  <% if task && task.errors.any? %>
+  <% if task.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(task.errors.count, "error") %> prohibited this task from being saved:</h2>
 
@@ -17,13 +17,8 @@
   </div>
 
   <div class="field">
-    <%= form.label :init %>
-    <%= form.datetime_select :init %>
-  </div>
-
-  <div class="field">
-    <%= form.label :end %>
-    <%= form.datetime_select :end %>
+    <%= form.label :duration %>
+    <%= form.text_field :duration %>
   </div>
 
   <div class="field">
