@@ -14,8 +14,7 @@ class TasksTest < ApplicationSystemTestCase
     visit tasks_url
     click_on "New Task"
 
-    fill_in "End", with: @task.end
-    fill_in "Init", with: @task.init
+    fill_in "Duration", with: @task.duration
     fill_in "Name", with: @task.name
     fill_in "Project", with: @task.project_id
     fill_in "User", with: @task.user_id
@@ -29,8 +28,7 @@ class TasksTest < ApplicationSystemTestCase
     visit tasks_url
     click_on "Edit", match: :first
 
-    fill_in "End", with: @task.end
-    fill_in "Init", with: @task.init
+    fill_in "Duration", with: @task.duration
     fill_in "Name", with: @task.name
     fill_in "Project", with: @task.project_id
     fill_in "User", with: @task.user_id
