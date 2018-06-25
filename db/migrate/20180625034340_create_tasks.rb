@@ -3,7 +3,6 @@ class CreateTasks < ActiveRecord::Migration[5.2]
     create_table :tasks do |t|
       t.string :name
       t.float :duration
-      t.belongs_to :user, foreign_key: true
       t.belongs_to :project, foreign_key: true
 
       t.timestamps

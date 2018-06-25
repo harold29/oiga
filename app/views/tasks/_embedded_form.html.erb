@@ -1,0 +1,13 @@
+<%= form_with(model: @task, html: {class: "form-inline"}) do |f| %>
+  <%= f.label :name, class: "sr-only invisible" %>
+  <%= f.text_field :name, class: "form-control mb-2 mr-sm-2" %>
+
+  <%= f.label :duration, class: "sr-only invisible" %>
+  <%= f.text_field :duration, class: "form-control mb-2 mr-sm-2" %>
+
+  <%= f.label :project, class: "sr-only invisible" %>
+  <%= f.text_field :project, class: "invisible form-control mb-2 mr-sm-2" %>
+
+  <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-danger">Danger</button>
+<% end %>
